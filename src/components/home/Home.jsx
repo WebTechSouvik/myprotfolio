@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import UseMove from "../../hooks/UseMove.jsx";
 import { useSelector, useDispatch } from "react-redux";
 import profile from "../../assets/profile.png";
-
+import Resume from "../../assets/Resume.pdf";
 const Home = () => {
 	const ref = useRef();
 	UseMove(ref, "Home", 0);
@@ -55,8 +55,9 @@ const Home = () => {
 							<i class="fa-solid fa-arrow-right"></i>
 						</a>
 						<a
-							href="#"
+							href={Resume}
 							className="cv-link"
+							 download
 							// initial={{ x: 150 }}
 							// animate={{ x: 0 }}
 							// transition={{

@@ -1,0 +1,14 @@
+.project {
+	width: 683px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 100px;
+	overflow: hidden;
+	color: rgb(var(--text-colour));
+}
+@media screen and (max-width: 425px){
+	.project {width:90vw}
+	
+}

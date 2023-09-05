@@ -1,0 +1,34 @@
+.skills {
+	width: 60vw;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 100px;
+	color: rgb(var(--text-colour));
+	gap: 30px;
+}
+.skills-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px;
+	max-width: 100%;
+}
+.skill {
+	background-color: rgba(var(--text-colour), 0.1);
+	padding: 12px 20px;
+	font-size: 18px;
+	border-radius: 12px;
+}
+
+
+@media screen and (max-width: 425px){
+	.skills{
+		width: 90vw;
+	}
+	.skill{
+		font-size: 15px;
+			border-radius: 9px;
+	}
+}

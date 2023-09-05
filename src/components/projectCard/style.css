@@ -1,0 +1,86 @@
+.project-card {
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+	background-color: rgba(var(--text-colour), 0.1);
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 40px 35px;
+	gap: 30px;
+	transition: all 0.2s;
+}
+
+.project-des {
+	max-width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 50px;
+	color: rgb(var(--text-colour));
+	padding-right: 40px;
+}
+.project-des p {
+	opacity: 0.6;
+	line-height: 25px;
+	margin-top: 5px;
+}
+
+.project-img {
+	height: 86%;
+	position: absolute;
+	width: 40%;
+	bottom: 0;
+	right: 0px;
+	
+	border-radius: 10px 0 0 0;
+	transition: all 0.2s;
+}
+.project-img img{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+
+}
+.project-skills {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+	gap: 8px;
+}
+.project-skill {
+	height: 25px;
+	width: max-content;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 30px;
+	padding: 0px 15px;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+}
+.project-skill span {
+	font-size: 12px;
+	opacity: 0.7;
+}
+.project-card:hover{
+	background-color: rgba(var(--text-colour), 0.2);
+}
+.project-card:hover .project-img{
+	transform: scale(1.04)  rotate(-2deg) translate(-3px ,3px);
+	}
+
+
+
+	@media screen and (max-width: 425px){
+		.project-card{
+			padding: 40px 25px;
+			background-image: url(https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80 );
+		}
+		.project-img {
+			display: none;
+
+		}
+		.project-des{
+			max-width: 100%;
+		}
+	}

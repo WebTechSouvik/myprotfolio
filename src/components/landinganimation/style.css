@@ -1,0 +1,10 @@
+.Landinganimation{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+svg{
+	transform: translateY(-50px);
+}
